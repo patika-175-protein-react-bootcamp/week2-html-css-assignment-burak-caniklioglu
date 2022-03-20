@@ -30,7 +30,8 @@ body{
 }
 
 #image-area{
-    margin: 357px 390px 0 330px;
+    margin:357px  auto 90px auto;
+    width: 1260px;
     display: grid;
     grid-template-rows: repeat(3,369px) ;
     grid-template-columns:repeat(4,246px) ;
@@ -96,4 +97,75 @@ body{
     width: 216px;
     height: 324px;
     
+}
+.card-5,.card-9{
+    background: url(./images/agent-zero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
+.card-6, .card-10{
+    background: url(./images/anita-blake.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
+.card-7,.card-11{
+    background: url(./images/alex-power.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
+.card-8, .card-12{
+    background: url(./images/apocalypse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
+
+#btn-area{
+    width: 1180px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    font-size: 18px;
+}
+
+i{
+    font-size: 36px;
+}
+#btns{
+    float: right;
+    font-weight: 600;
+    width: 648px;
+    height: 72px;
+    margin-bottom: 210px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.btn{
+    cursor: pointer;
+}
+
+.btn-5{
+    background-color: gray;
+    padding: 0.8rem 1.2rem;
+    color: #222222;
+    border-radius: 2rem;
+
 }
