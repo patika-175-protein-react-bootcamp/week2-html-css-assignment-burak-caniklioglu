@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #222222;
+    
+}
+
+#logo-image img{
+    margin-top: -325px;
+    width: 100%;
+    
+
+
+}
+
+#logo-lg{
+    width: 100%;
+    text-align: center;
+    margin-top: -280px;
+}
+#logo-lg img{
+    width: 600px;
+    height: 290px;
+    filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+}
+
+#image-area{
+    margin: 357px 390px 0 330px;
+    display: grid;
+    grid-template-rows: repeat(3,369px) ;
+    grid-template-columns:repeat(4,246px) ;
+    gap:  105px 64px;
+}
+
+.card{
+    width: 252px;
+    height: 369px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    align-items:  center;
+    flex-direction: column;
+
+}
+.card-container{
+    margin-top: -42px ;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+    
+}
+.card p{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    font-size:18px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+.card-1{
+    background: url(./images/adam.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+}
+
+.card-2{
+    background: url(./images/a-has.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
+.card-3{
+    background: url(./images/alex-power.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
+.card-4{
+    background: url(./images/amrican-eagle.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    width: 216px;
+    height: 324px;
+    
+}
