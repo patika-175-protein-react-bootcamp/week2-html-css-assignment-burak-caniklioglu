@@ -8,6 +8,8 @@
 body{
     background: #222222;
     
+    min-height: 100vh;
+    
 }
 
 #logo-image img{
@@ -31,29 +33,29 @@ body{
 
 #image-area{
     margin:357px  auto 90px auto;
-    width: 1260px;
-    display: grid;
-    grid-template-rows: repeat(3,369px) ;
-    grid-template-columns:repeat(4,246px) ;
-    gap:  105px 64px;
+    max-width: 65%;
+    
+    background-color: blue;
 }
 
-.card{
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.cards{
     width: 252px;
     height: 369px;
+    margin-bottom: 105px;
     border: 1px solid #FFFFFF;
     display: flex;
     align-items:  center;
     flex-direction: column;
 
 }
-.card-container{
-    margin-top: -42px ;
-    padding-top: 10px;
-    border-top: 1px solid #fff;
-    
-}
-.card p{
+
+.cards p{
     width: 100%;
     text-align: center;
     margin-top: 1rem;
@@ -61,77 +63,48 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #fff;
 }
-
-.card-1{
-    background: url(./images/adam.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
+.card-container{
+    margin-top: -42px ;
+    padding-top: 10px;
+    border-top: 1px solid #fff;
+    
+}
+.card{
     width: 216px;
     height: 324px;
+    object-fit: cover;
+}
+.card-1{
+    content: url(./images/adam.jpg);
+    
 }
 
 .card-2{
-    background: url(./images/a-has.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/a-has.jpg);
     
 }
 .card-3{
-    background: url(./images/alex-power.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/alex-power.jpg);
     
 }
 .card-4{
-    background: url(./images/amrican-eagle.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/amrican-eagle.jpg);
     
 }
 .card-5,.card-9{
-    background: url(./images/agent-zero.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/agent-zero.jpg);
     
 }
 .card-6, .card-10{
-    background: url(./images/anita-blake.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/anita-blake.jpg);
     
 }
 .card-7,.card-11{
-    background: url(./images/alex-power.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/alex-power.jpg);
     
 }
 .card-8, .card-12{
-    background: url(./images/apocalypse.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: none;
-    width: 216px;
-    height: 324px;
+    content: url(./images/apocalypse.jpg);
     
 }
 
@@ -197,49 +170,48 @@ i{
 
 
 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width : 576px){
     #logo-image img{
         margin-top: -60px;
         width: 100%;
-        
-    
-    
     }
     
     #logo-lg{
         width: 100%;
-        text-align: center;
         margin-top: -170px;
     }
     #logo-lg svg{
         width: 40%;
-        
-        filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     }
-    
-    #image-area{
-        margin:60px  auto 90px auto;
-        width: 100%;
-        display: grid;
-        grid-template-rows: repeat(12,369px) ;
-        grid-template-columns:repeat(1,246px) ;
-        gap:  105px 64px;
-        justify-content: center;
-    }
-    
-    
     #btn-area{
         width: 100%;
         margin: auto;
-        font-family: 'Roboto', sans-serif;
-        color: gray;
         font-size: 12px;
     }
-    
-    i{
-        font-size: 36px;
-    }
-
     .btn-2,.btn-3,.btn-7,.btn-8{
         display: none;
     } 
@@ -252,8 +224,6 @@ i{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        
-        
     }
     
     
@@ -297,16 +267,7 @@ i{
         filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     }
 
-    #image-area{
-        margin:200px  auto 90px auto;
-        width:100%;
-        display: grid;
-        grid-template-rows: repeat(6,369px) ;
-        grid-template-columns:repeat(2,246px) ;
-        gap:  105px 64px;
-        justify-content: center;
-    }
-
+    
     #btn-area{
         width: 100%;
     }
@@ -372,15 +333,7 @@ i{
         filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     }
 
-     #image-area{
-        margin:200px  auto 90px auto;
-        width:100%;
-        display: grid;
-        grid-template-rows: repeat(4,369px) ;
-        grid-template-columns:repeat(3,236px) ;
-        gap:  105px 10px;
-        justify-content: center;
-    }
+     
 
     #btn-area{
         width: 60%;
@@ -428,15 +381,7 @@ i{
         filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     }
 
-     #image-area{
-        margin:200px  auto 90px auto;
-        width:100%;
-        display: grid;
-        grid-template-rows: repeat(3,369px) ;
-        grid-template-columns:repeat(4,236px) ;
-        gap:  105px 10px;
-        justify-content: center;
-    }
+ 
 
     #btn-area{
         width: 60%;
@@ -499,15 +444,7 @@ i{
         filter: drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
     }
 
-     #image-area{
-        margin:200px  auto 90px auto;
-        width:100%;
-        display: grid;
-        grid-template-rows: repeat(3,369px) ;
-        grid-template-columns:repeat(4,246px) ;
-        gap:  105px 30px;
-        justify-content: center;
-    }
+    
 
     #btn-area{
         width: 60%;
@@ -517,4 +454,4 @@ i{
         width: 100%;    
     }
    
-}
+} 
